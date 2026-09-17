@@ -16,6 +16,11 @@ The current repository reflects the foundational kinematics and propulsion mecha
 ### 📁 /Simulink_Models
 *   `final.slx`: A Simulink environment designed to cross-verify the analytical BET calculations and Lumped-Parameter models directly against the built-in Simulink Multirotor dynamics physics block .
 
+### 📁 /Sensor_Fusion
+
+* `ekf_comp_inbuild.m`: MATLAB script for real-time MPU6050 sensor data acquisition via Arduino, comparing raw accelerometer and gyroscope readings against MATLAB's built-in Complementary and Extended Kalman Filters (EKF) for roll, pitch, and yaw estimation.
+* `ekf_comp_manual.m`: MATLAB script that implements a custom Complementary Filter and a 2-state linear Kalman Filter (tracking angle and gyro bias) from scratch, benchmarking their real-time performance directly against MATLAB's built-in sensor fusion algorithms.
+
 ## Future Work Roadmap
 
 The upcoming phases of the project will focus heavily on sensor integration and control systems:
